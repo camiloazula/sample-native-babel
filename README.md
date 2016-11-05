@@ -1,4 +1,4 @@
-# Seed for Nativescript + webpack 2 + babel:
+# Seed for Nativescript + webpack 2 + babel: (Stack without typescript)
 
 Tested with:
 
