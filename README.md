@@ -1,11 +1,12 @@
-# Seed for Nativescript + webpack 2 + babel: (Stack without typescript)
+# Seed for Nativescript + webpack 2 + babel: 
+## Stack without typescript!
 
 Tested with:
 
 - NodeJS v7
 - nativescript@next 
 
-Webpack is call via by './hooks/after-prepare/nativescript-dev-webpack.js'
+> Important: Webpack is called by './hooks/after-prepare/nativescript-dev-webpack.js'
 
-This is not for production only to grab the parts that you need for your project
+This is not for production, just grab the parts that you need for your project
 
