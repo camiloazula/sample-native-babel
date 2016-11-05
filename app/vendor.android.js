@@ -12,6 +12,7 @@ require("ui/frame");
 require("ui/frame/activity");
 if (global.TNS_WEBPACK) {
     global.__requireOverride = function (name, dir) {
+        console.log('!!!!!!!!!!!!!!!!!!!!!!!!Override require', name, dir)
         if (name === "./tns_modules/application/application.js") {
             return require("application");
         }

@@ -9,7 +9,7 @@ var path = require("path");
 module.exports = function(platform, destinationApp) {
     var entry = {};
     entry.bundle = "./" + nsWebpack.getEntryModule();
-    entry.vendor = "./vendor";
+    entry.vendor = ['./vendor.js', `./vendor.${platform}.js`]
 
     return {
         context: path.resolve("./app"),
