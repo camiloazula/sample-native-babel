@@ -17,7 +17,6 @@ module.exports = function(platform, destinationApp) {
         output: {
             pathinfo: true,
             path: path.resolve(destinationApp),
-            libraryTarget: "commonjs2",
             filename: "[name].js",
             jsonpFunction: "nativescriptJsonp"
         },
@@ -27,8 +26,8 @@ module.exports = function(platform, destinationApp) {
                 "." + platform + ".js",
             ],
             modules: [
-                "node_modules/tns-core-modules",
-                "node_modules"
+                path.join(__dirname, "node_modules/tns-core-modules"),
+                path.join(__dirname, "node_modules"),
             ]
         },
         node: {
