@@ -15,11 +15,12 @@ import { AppComponent } from "./app.component";
 Error['stackTraceLimit'] = Infinity
 
 @NgModule({
-    bootstrap: [AppComponent],
     imports: [
         NativeScriptModule
     ],
+    declarations: [AppComponent],
+    bootstrap: [AppComponent]
 })
 class AppComponentModule {}
 
-platformNativeScriptDynamic().bootstrapModule(AppComponentModule);
+platformNativeScriptDynamic().bootstrapModule(AppComponentModule)

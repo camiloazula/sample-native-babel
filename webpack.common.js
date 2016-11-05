@@ -26,6 +26,7 @@ module.exports = function(platform, destinationApp) {
                 "." + platform + ".js",
             ],
             modules: [
+                path.join(__dirname, "app"),
                 path.join(__dirname, "node_modules/tns-core-modules"),
                 path.join(__dirname, "node_modules"),
             ]
