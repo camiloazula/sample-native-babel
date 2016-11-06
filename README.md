@@ -11,11 +11,14 @@ Tested with:
 This is not for production, just grab the parts that you need for your project
 
 Trouble shooting:
-SDK incompatibles:
-In OSx please define in you ~/.profile as follows:
+
+### SDK incompatibles:
+
+In OSx please define in your ~/.profile file as follows:
 
 ```bash
 export ANDROID_HOME=/Users/camiloazula/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 ```
+I recommnend you to use API v24 I tried 25 and grade build was having problems
 
